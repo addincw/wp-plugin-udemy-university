@@ -12,10 +12,4 @@
 
 require_once __DIR__ . '/post-types/index.php';
 
-if (!function_exists('uu_register_custom_post_types')) {
-    function uu_register_custom_post_types()
-    {
-        uu_regis_post_type_event();
-    }
-}
 add_action('init', 'uu_register_custom_post_types');
